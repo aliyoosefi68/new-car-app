@@ -2,7 +2,7 @@ import { useRouter } from "next/router";
 import carsData from "@/data/carsData";
 import CarsList from "@/components/templates/CarsList";
 
-const categoryName = () => {
+const CategoryName = () => {
   const router = useRouter();
   const category = router.query.categoryName;
   const myCars = carsData.filter((car) => car.category === category);
@@ -14,4 +14,4 @@ const categoryName = () => {
   );
 };
 
-export default categoryName;
+export default CategoryName;

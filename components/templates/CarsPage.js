@@ -8,7 +8,7 @@ const CarsPage = ({ data }) => {
   return (
     <div className={styles.container}>
       {data.map((car) => (
-        <CarCard data={...car} key={car.id}/>
+        <CarCard data={car} key={car.id} />
       ))}
     </div>
   );

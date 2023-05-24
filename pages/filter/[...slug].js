@@ -3,7 +3,7 @@ import React from "react";
 import carsData from "@/data/carsData";
 import CarsList from "@/components/templates/CarsList";
 
-const filterCars = () => {
+const FilterCars = () => {
   const router = useRouter();
   const [min, max] = router.query.slug || [];
   const myCars = carsData.filter((car) => car.price > min && car.price < max);
@@ -18,4 +18,4 @@ const filterCars = () => {
   );
 };
 
-export default filterCars;
+export default FilterCars;
