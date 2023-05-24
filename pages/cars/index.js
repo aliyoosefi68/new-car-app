@@ -1,15 +1,17 @@
+import React from "react";
 import carsData from "@/data/carsData";
 import CarsPage from "@/components/templates/CarsPage";
 import Categories from "@/components/modules/Categories";
 import SearchBar from "@/components/modules/SearchBar";
-
-export default function Home() {
-  const cars = carsData.slice(0, 3);
+const Allcars = () => {
   return (
-    <>
+    <div>
       <SearchBar />
       <Categories />
-      <CarsPage data={cars} />
-    </>
+
+      <CarsPage data={carsData} />
+    </div>
   );
-}
+};
+
+export default Allcars;
